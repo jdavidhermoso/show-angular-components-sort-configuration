@@ -1,10 +1,14 @@
 <form [formGroup]="filtersForm">
-  <input
-    *ngFor="let filterControlConfig of filtersFormConfiguration"
-    [formControl]="filterControlConfig.control"
-    (change)="onFilterChange()"
-    type="number"
-    min="0"
-    max="5"
-    [placeholder]="filterControlConfig.placeHolder"/>
+  <div *ngFor="let filterControlConfig of filtersFormConfiguration">
+    <label>
+      {{filterControlConfig.placeHolder}}
+    </label>
+    <input
+      [formControl]="filterControlConfig.control"
+      (change)="onFilterChange()"
+      type="number"
+      min="0"
+      max="5"
+      [placeholder]="filterControlConfig.placeHolder"/>
+  </div>
 </form>

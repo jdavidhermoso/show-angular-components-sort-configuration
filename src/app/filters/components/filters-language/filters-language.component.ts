@@ -5,11 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './filters-language.component.html',
   styleUrls: ['./filters-language.component.css']
 })
-export class FiltersLanguageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class FiltersLanguageComponent {}

@@ -1,25 +1,29 @@
-{{(filtersOrderConfiguration$ | async) | json}}
-
 <ng-container *ngIf="(filtersOrderConfiguration$ | async) as orderConfiguration">
   <div class="filters__container">
     <app-filters-difficult
+      class="filter"
       [style.order]="orderConfiguration.difficultLevel"
     ></app-filters-difficult>
     <app-filters-price
+      class="filter"
       [style.order]="orderConfiguration.price"
     ></app-filters-price>
     <app-filters-duration
+      class="filter"
       [style.order]="orderConfiguration.duration"
     ></app-filters-duration>
     <app-filters-rating
+      class="filter"
       [style.order]="orderConfiguration.rating"
     ></app-filters-rating>
     <app-filters-language
+      class="filter"
       [style.order]="orderConfiguration.language"
     ></app-filters-language>
   </div>
 </ng-container>
-<app-filters-form
-(filtersUpdate)="updateFilterOrder($event)"></app-filters-form>
+
+NOTE: This component is just to allow you see how the components change! It would not be present in the real solution.
+<app-filters-form (filtersUpdate)="updateFiltersOrder($event)"></app-filters-form>
 
 

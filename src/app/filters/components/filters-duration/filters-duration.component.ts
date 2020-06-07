@@ -5,11 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './filters-duration.component.html',
   styleUrls: ['./filters-duration.component.css']
 })
-export class FiltersDurationComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class FiltersDurationComponent {}

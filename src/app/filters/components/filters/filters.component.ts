@@ -1,7 +1,8 @@
 import {Component} from '@angular/core';
-import {FiltersService} from '../../services/filters.service';
+import {DemoService} from '../../services/demo.service';
 import {FiltersOrderConfiguration} from '../../models/filters-order-configuration';
 import {Observable} from 'rxjs';
+import {FiltersService} from '../../services/filters.service';
 
 @Component({
   selector: 'app-filters',
@@ -11,12 +12,13 @@ import {Observable} from 'rxjs';
 export class FiltersComponent {
   public filtersOrderConfiguration$: Observable<FiltersOrderConfiguration>;
 
-  constructor(private filtersService: FiltersService) {
-    this.filtersOrderConfiguration$ = this.filtersService.filtersOrderConfigurationBehaviorSubject.asObservable();
+  constructor(private filtersService: FiltersService,
+              private demoService: DemoService) {
+    this.filtersOrderConfiguration$ = this.filtersService.getFiltersOrderConfiguration();
   }
 
-  public updateFilterOrder(filters: FiltersOrderConfiguration) {
-    this.filtersService.updateFilterOrder(filters);
+  public updateFiltersOrder(filters: FiltersOrderConfiguration) {
+    this.demoService.updateFilterOrder(filters);
   }
 
 }

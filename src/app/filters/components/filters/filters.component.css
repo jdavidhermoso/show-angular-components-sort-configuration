@@ -2,3 +2,8 @@
   display: flex;
   flex-direction: column;
 }
+
+.filter {
+  display: block;
+  border: 1px solid;
+}
