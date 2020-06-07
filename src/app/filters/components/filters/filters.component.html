@@ -1,0 +1,25 @@
+{{(filtersOrderConfiguration$ | async) | json}}
+
+<ng-container *ngIf="(filtersOrderConfiguration$ | async) as orderConfiguration">
+  <div class="filters__container">
+    <app-filters-difficult
+      [style.order]="orderConfiguration.difficultLevel"
+    ></app-filters-difficult>
+    <app-filters-price
+      [style.order]="orderConfiguration.price"
+    ></app-filters-price>
+    <app-filters-duration
+      [style.order]="orderConfiguration.duration"
+    ></app-filters-duration>
+    <app-filters-rating
+      [style.order]="orderConfiguration.rating"
+    ></app-filters-rating>
+    <app-filters-language
+      [style.order]="orderConfiguration.language"
+    ></app-filters-language>
+  </div>
+</ng-container>
+<app-filters-form
+(filtersUpdate)="updateFilterOrder($event)"></app-filters-form>
+
+
