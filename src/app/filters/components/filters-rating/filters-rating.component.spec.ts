@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { FiltersRatingComponent } from './filters-rating.component';
+import {FiltersRatingComponent} from './filters-rating.component';
 
 describe('FiltersRatingComponent', () => {
   let component: FiltersRatingComponent;

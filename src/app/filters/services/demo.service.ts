@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
-import {FiltersOrderConfiguration} from '../models/filters-order-configuration';
-import {BehaviorSubject, Observable, of} from 'rxjs';
+import {FiltersOrderConfiguration} from '../models';
+import {BehaviorSubject} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'

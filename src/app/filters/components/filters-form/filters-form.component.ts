@@ -1,7 +1,6 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
-import {OutputEmitter} from '@angular/compiler/src/output/abstract_emitter';
-import {FiltersOrderConfiguration} from '../../filters/models/filters-order-configuration';
+import {FiltersOrderConfiguration} from '../../models/filters-order-configuration';
 
 @Component({
   selector: 'app-filters-form',

@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { FiltersLanguageComponent } from './filters-language.component';
+import {FiltersLanguageComponent} from './filters-language.component';
 
 describe('FiltersLanguageComponent', () => {
   let component: FiltersLanguageComponent;

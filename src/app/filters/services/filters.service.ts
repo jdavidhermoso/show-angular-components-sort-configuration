@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {DemoService} from './demo.service';
-import {FiltersOrderConfiguration} from '../models/filters-order-configuration';
+import {FiltersOrderConfiguration} from '../models';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 

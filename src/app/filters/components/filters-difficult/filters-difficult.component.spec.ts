@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { FiltersDifficultComponent } from './filters-difficult.component';
+import {FiltersDifficultComponent} from './filters-difficult.component';
 
 describe('FiltersDifficultComponent', () => {
   let component: FiltersDifficultComponent;
