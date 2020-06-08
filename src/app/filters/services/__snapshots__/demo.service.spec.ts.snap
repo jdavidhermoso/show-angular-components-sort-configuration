@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FiltersService Should notify when a new value is emitted 1`] = `
+Object {
+  "difficultLevel": 0,
+  "duration": 3,
+  "language": 2,
+  "price": 1,
+  "rating": 1,
+}
+`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FiltersService Should return filters order configurations in negative 1`] = `
+Object {
+  "difficultLevel": 0,
+  "duration": -3,
+  "language": -2,
+  "price": -1,
+  "rating": -1,
+}
+`;
